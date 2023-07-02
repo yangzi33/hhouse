@@ -5,7 +5,10 @@ export default class SideBar extends Component {
   render() {
     const sideBarStyles = {
       height: "100%",
-      border: "2px black",
+      width: "20%",
+      position: "sticky",
+      border: "2px solid black",
+      "padding-left": "10px",
     };
     return (
       <Grid style={sideBarStyles}>

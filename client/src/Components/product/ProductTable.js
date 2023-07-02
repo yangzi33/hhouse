@@ -10,9 +10,9 @@ export default class ProductTable extends Component {
   render() {
     const { products, className = "" } = this.props;
     const tableStyle = {
-      "padding-left": "100px",
-      "padding-right": "10px",
-      "margin-right": "10px",
+      flex: "1",
+      "margin-left": "10px",
+      "margin-top": "20px",
       "max-width": "60%",
     };
     return (

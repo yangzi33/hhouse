@@ -6,6 +6,7 @@ import SignIn from "./Components/sign-in/SignIn";
 import SignUp from "./Components/sign-up/SignUp";
 import ProductCard from "./Components/product/ProductCard";
 import reportWebVitals from "./reportWebVitals";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

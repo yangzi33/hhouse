@@ -1,26 +1,21 @@
 import React, { Component } from "react";
-import { Grid } from "@mui/material";
-import "./App.css";
+import { styled, useTheme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import MuiAppBar from "@mui/material/AppBar";
+import DrawerNav from "./Components/appbar/DrawerNav";
 import productData from "./dummy-data.json";
-import ProductCard from "./Components/product/ProductCard";
 import ProductTable from "./Components/product/ProductTable";
 import TopBar from "./Components/appbar/TopBar";
-import SideBar from "./Components/appbar/SideBar";
-import PersistentDrawerLeft from "./Components/appbar/PersistentDrawer";
 
 export default class App extends Component {
   render() {
-    // console.log(productData.products);
-    const appContainer = { display: "flex" };
     return (
-      <>
-        {/* <TopBar /> */}
-        <PersistentDrawerLeft />
-        <div style={appContainer}>
-          {/* <SideBar /> */}
-          <ProductTable className="product-table" products={productData} />
-        </div>
-      </>
+      <Box>
+        <TopBar />
+        <Box sx={{ display: "flex" }}>
+          <ProductTable products={productData} />
+        </Box>
+      </Box>
     );
   }
 }
