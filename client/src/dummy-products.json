@@ -1,0 +1,8 @@
+{
+  "products": [
+    {"productId": "1", "price": "29.99", "name": "prod1", "imagePath": "product-img/sylv.jpg"},
+    {"productId": "2", "price": "39.99", "name": "prod3","imagePath": "product-img/sylv.jpg"},
+    {"productId": "3", "price": "19.99", "name": "prod2","imagePath": "product-img/sylv.jpg"}
+  ]
+
+}

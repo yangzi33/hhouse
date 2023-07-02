@@ -1,14 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import SignIn from './Components/sign-in/SignIn';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import SignIn from "./Components/sign-in/SignIn";
+import SignUp from "./Components/sign-up/SignUp";
+import ProductCard from "./Components/product/ProductCard";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// For Local testing only
+// Remove for deployment
+// root.use(express.static(__dirname));
+
+// root.get("/*", function (req, res) {
+//   res.sendFile(path.join(__dirname, "index.html"));
+// });
+
 root.render(
   <React.StrictMode>
-    <SignIn />
+    <App />
   </React.StrictMode>
 );
 
