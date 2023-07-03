@@ -11,14 +11,11 @@ export default class ProductTable extends Component {
     const { products, className = "" } = this.props;
     const tableStyle = {
       flex: "1",
-      "margin-left": "10px",
-      "margin-top": "20px",
-      "max-width": "60%",
     };
     return (
       <Grid style={tableStyle} container spacing={1}>
         {products.map((product) => (
-          <Grid item xs={3}>
+          <Grid item xs={4}>
             <ProductCard
               name={product.name}
               imagePath={product.imagePath}
