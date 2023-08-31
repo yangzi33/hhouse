@@ -1,4 +1,4 @@
-AWS Serverless Ecommerce Platform
+HHouse - AWS Serverless E-commerce Sample Platform
 =================================
 
 __Status__: _Work-in-progress._
