@@ -10,9 +10,19 @@ import TopBar from "./Components/appbar/TopBar";
 export default class App extends Component {
   render() {
     return (
+      // <Box sx={{ backgroundColor: "#F6F1EB" }}>
       <Box>
         <TopBar />
-        <Box sx={{ display: "flex" }}>
+        <Box
+          container
+          sx={{
+            display: "flex",
+            "margin-left": "20%",
+            "margin-right": "20%",
+            maxWidth: "60%",
+            "padding-top": "10px",
+          }}
+        >
           <ProductTable products={productData} />
         </Box>
       </Box>
